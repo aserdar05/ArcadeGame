@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/modal.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="materialModal" class="materialModal hide">
+        <div id="materialModalCentered">
+            <div id="materialModalContent">
+                <div id="materialModalTitle">
+                    Choose Your Player
+                </div>
+                <div id="materialModalText" class="player-choose">
+                    <div class="player char-boy"></div>
+                    <div class="player char-cat-girl"></div>
+                    <div class="player char-horn-girl"></div>
+                    <div class="player char-pink-girl"></div>
+                    <div class="player char-princess-girl"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="materialModalCompleted" class="hide">
+        <div id="materialModalCompletedCentered">
+            <div id="materialModalCompletedContent">
+                <div id="materialModalCompletedTitle">
+                    Congratulations!
+                </div>
+                <div id="materialModalCompletedText">
+                    You reached water and earned 500 points!
+                </div>
+                <div id="materialModalCompletedButtons">
+                    <a id="btn-continue" class="button">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="btn-change-character" class="button">Change Character</a>
+    <section class="score-panel">
+        <span class="score">0</span> Points
+        <br />
+        <span class="movement">0</span> Moves
+    </section>
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+
+</body>
+</html>

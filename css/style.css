@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.player-choose {
+    display: inline;
+}
+
+.score-panel {
+    font-weight: bold;
+}
+
+.player {
+    width: 101px;
+    height: 171px;
+    display: inline-block;
+    cursor: pointer;
+}
+.player:hover {
+    background-color: #78909C;
+}
+
+.char-boy {
+    background-image: url("../images/char-boy.png");
+}
+.char-cat-girl {
+    background-image: url("../images/char-cat-girl.png");
+}
+.char-horn-girl {
+    background-image: url("../images/char-horn-girl.png");
+}
+.char-pink-girl {
+    background-image: url("../images/char-pink-girl.png");
+}
+.char-princess-girl {
+    background-image: url("../images/char-princess-girl.png");
+}
