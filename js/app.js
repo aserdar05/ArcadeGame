@@ -73,20 +73,28 @@ class Player extends GameObject {
     handleInput(pressedKey) {
         if (pressedKey != undefined) {
             if (pressedKey == 'right') {
-                this.x = this.x + 100;
-                this.update();
+                if (calculateXOrder(this.x + 100) != -1) {
+                    this.x = this.x + 100;
+                    this.update();
+                }
             }
             else if (pressedKey == 'left') {
-                this.x = this.x - 100;
-                this.update();
+                if (calculateXOrder(this.x - 100) != -1) {
+                    this.x = this.x - 100;
+                    this.update();
+                }
             }
             else if (pressedKey == 'down') {
-                this.y = this.y + 83;
-                this.update();
+                if (calculateYOrder(this.y + 83) != -1) {
+                    this.y = this.y + 83;
+                    this.update();
+                }
             }
             else if (pressedKey == 'up') {
-                this.y = this.y - 83;
-                this.update();
+                if (calculateYOrder(this.y - 83) != -1) {
+                    this.y = this.y - 83;
+                    this.update();
+                }
             }
             //Rerender the player position
             this.render();
