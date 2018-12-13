@@ -98,7 +98,7 @@ var Engine = (function(global) {
         if (allEnemies.length < maxEnemyCount) {
             let yOrder = Math.floor(Math.random() * 3) + 1;
             let speed = (Math.floor(Math.random() * 3) + 1) * 100;
-            allEnemies.push(new Enemy(0, yOrder, speed));
+            allEnemies.push(new Enemy(0, yOrder, enemyBugImage, speed));
         }
         player.update();
     }
